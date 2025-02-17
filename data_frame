@@ -1,0 +1,13 @@
+columna_1 <-c("falla sistema inmunitario", "neoplasia", "infeccioso", "trauma", "falla sistema cardiovascular", "muerte subita", "cuerpo extraño")
+columna_2 <-c(16, 13, 23, 19, 4, 3, 1)
+columna_3 <-c(33, 23, 15, 5, 6, 3, 5)
+columna_4 <-c(47, 50, 13, 3, 9, 1, 0)
+columna_5 <-c(43, 37, 2, 1, 2, 0, 0)
+
+Tabla <- data.frame(motivo_de_muerte=columna_1, 
+                    "edad: 0 a 4 anos"=columna_2, 
+                    "edad: 5 a 9 anos"=columna_3, 
+                    "edad: 10 a 14 anos"=columna_4, 
+                    "edad: 15 anos o más"=columna_5)
+
+View(Tabla)
