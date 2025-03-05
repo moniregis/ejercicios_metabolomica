@@ -1,0 +1,38 @@
+---
+title: "ejercicio perros"
+author: "Regina Castro"
+date: "2025-03-05"
+output: html_document
+---
+
+```{r}
+library("pacman")
+p_load("readr", 
+       "dplyr",
+       "ggplot2",
+       "ggrepel",    #para mejorar graficas
+       "matrixTests")
+```
+
+#creacióon de objetos
+```{r}
+Vector1<-c("Border Colie","Schnauzer","Gran Danes","Corgie","Criollo")
+Vector2<-c(3,9,3,1,5)
+Vector3<-c(4,3.5,3,1.5,4.5)
+```
+
+#crear la tabla
+```{r}
+Razas_perros <-data.frame(Raza=Vector1,
+                      Total_perros=Vector2,
+                      Edad_promedio=Vector3)
+Razas_perros
+
+
+```
+
+```{r}
+Prom_total<-mean(Razas_perros$Total_perros)
+Prom_edad<-mean(Razas_perros$Edad_promedio)
+```
+
